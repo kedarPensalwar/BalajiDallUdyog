@@ -5,10 +5,8 @@ const fs = require("fs");
 const path = require("path");
 
 app.use(express.json());
-const corsOptions = {
-  origin: ["http://localhost:5173"],
-};
-app.use(cors(corsOptions));
+app.use(cors());
+
 const filePath = path.join(__dirname, "data.json");
 const jsonData = require(filePath);
 
