@@ -50,12 +50,6 @@ export const Cards = ({ id, title, description, link }) => {
           </CardContent>
         </CardActionArea>
         <IconButton
-          aria-label="edit"
-          sx={{ position: "absolute", top: 8, right: 8 }}
-        >
-          <EditIcon />
-        </IconButton>
-        <IconButton
           aria-label="delete"
           sx={{ position: "absolute", bottom: 8, right: 8 }}
           onClick={() => handleDeleteIconClick(id)}
